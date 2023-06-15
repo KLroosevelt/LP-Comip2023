@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+}
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    height: 500px;
+    width: 400%;
+}
+
+#carrusel-contenido {
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    text-align: left !important;
+    max-height: 500px !important;
+
+    width: 100% !important;
+    height: 300px !important;
+
+    background-image: url("../img/slider/5.webp") !important;
+    /* object-fit: none !important; */
+    /* object-position: bottom center !important; */
+    background-size: cover;
+}
+
+
+.imagenes{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: top center;
+}
+
+.carrusel-elemento {
+    float: left;
+    width: 25%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    13% {
+        margin-left: 0;
+    }
+
+    15% {
+        margin-left: -100%;
+    }
+
+    28% {
+        margin-left: -100%;
+    }
+
+    30% {
+        margin-left: -200%;
+    }
+
+    43% {
+        margin-left: -200%;
+    }
+
+    45% {
+        margin-left: -300%;
+    }
+
+    58% {
+        margin-left: -300%;
+    }
+
+    60% {
+        margin-left: 0;
+    }
+
+    73% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+
+    88% {
+        margin-left: -100%;
+    }
+
+    90% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    13% {
+        margin-left: 0;
+    }
+
+    15% {
+        margin-left: -100%;
+    }
+
+    28% {
+        margin-left: -100%;
+    }
+
+    30% {
+        margin-left: -200%;
+    }
+
+    43% {
+        margin-left: -200%;
+    }
+
+    45% {
+        margin-left: -300%;
+    }
+
+    58% {
+        margin-left: -300%;
+    }
+
+    60% {
+        margin-left: 0;
+    }
+
+    73% {
+        margin-left: 0;
+    }
+
+    75% {
+        margin-left: -100%;
+    }
+
+    88% {
+        margin-left: -100%;
+    }
+
+    90% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    12% {
+        margin-left: 0;
+    }
+
+    13% {
+        margin-left: -100%;
+    }
+
+    27% {
+        margin-left: -100%;
+    }
+
+    28% {
+        margin-left: -200%;
+    }
+
+    42% {
+        margin-left: -200%;
+    }
+
+    43% {
+        margin-left: -300%;
+    }
+
+    57% {
+        margin-left: -300%;
+    }
+
+    58% {
+        margin-left: 0;
+    }
+
+    72% {
+        margin-left: 0;
+    }
+
+    73% {
+        margin-left: -100%;
+    }
+
+    87% {
+        margin-left: -100%;
+    }
+
+    88% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+.texto-slider {
+    z-index: 999;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 6vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+ 
+}
+
+@media only screen and (min-width: 568px) {
+    #carrusel-contenido {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: left;
+        max-height: 500px;
+    
+        width: 100%;
+        height:60% !important;
+    
+        background-image: url("img/5.webp");
+        object-fit: fill;
+        object-position: bottom center !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #carrusel-contenido {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: left;
+        max-height: 500px;
+    
+        width: 100%;
+        height:120% !important;
+    
+        background-image: url("img/5.webp");
+        object-fit: fill;
+        object-position: bottom center !important;
+    }
+  }
